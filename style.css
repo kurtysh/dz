@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box;
+}
+.conteiner {
+    width: 1170px ;
+    margin: 0 auto;
+}
+.logo{
+    text-decoration: none;
+    color: #F1B128;
+    font-size: 28px;
+    margin-right: 260px;
+    text-decoration: uppercase;
+    display: inline-block;
+}
+
+.head_menu{
+    display: inline-block;
+}
+
+.head_menu_item{
+    display: inline-block;
+    margin-right: 69px;
+}
+.head_menu_link{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3D3D3D;
+    text-decoration: none;
+}
+.head{
+    border-bottom: 3px solid #F1B128;
+    margin-top: 39px;
+    margin-bottom: 2px;
+}
+.no-margin{
+    margin-right: 0;
+}
