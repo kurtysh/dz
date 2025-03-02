@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашня №3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head_conteiner">
+        <ul class="menu_header">
+            <li class="head_menu_item"><a href="https://dan-it.com.ua/uk/" target="_blank" class="menu_link">About us</a></li>
+            <li class="head_menu_item"><a href="#" class="menu_link">Projects</a></li>
+            <li class="head_menu_item"><a href="#" class="menu_link">Blog</a></li>
+            <li class="head_menu_item"><a href="#" class="menu_link">Templates</a></li>
+            <li class="head_menu_item"><a href="#" class="menu_link">Libraries</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="wrapped">
+            <img class="img" src="Frame.png" alt="#">
+        </div>
+        <h2 class="h2_conteiner">How does CSS actually work?</h2>
+        <div class="text_div conteiner">
+        <b>When a browser displays a document, it must combine the document's content with its style information.
+                It processes the document in a number of stages, which we've listed below.
+                Bear in mind that <a class="text" href="#">this is a very simplified version</a> of what happens when a browser loads a webpage,
+                and that different browsers will handle the process in different ways. But this is roughly what happens.</b>
+            <div class="listed">
+                    <ol>
+                        <li>The browser loads the HTML (e.g. receives it from the network).</li>
+                        <li>It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer’s memory.</li>
+                        <li>The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images, videos, and even linked CSS!</li>
+                        <li>The browser parses the fetched CSS and sorts the different rules by their selector types.</li>
+                        <li>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</li>
+                        <li>The visual display of the page is shown on the screen (this stage is called painting).</li>
+                    </ol>
+                </div>
+                <div class="button">Learn more</div>
+            </div>
+    </main>
+    <footer class="footer">All right reserved</footer>
+</body>
+</html>
