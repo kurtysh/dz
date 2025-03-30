@@ -1,0 +1,258 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .head{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    font-size: 14px;
+
+  }
+ a{
+    text-decoration: none;
+  }
+  .header-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 126px;
+    font-size: 24px;
+    transition: color 0.3 ease;
+  }
+  .header-icons:hover{
+    color: #01813F;
+  }
+  body {
+    background: url('./Фон\ 1.png') no-repeat center center / cover;
+    min-height: 100vh;
+  }
+  
+  .header {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: color 0.3 ease;
+  }
+  header:hover{
+    background: linear-gradient(to bottom, );
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+  }
+  
+  .signup-form {
+    background: white;
+    padding: 33px 59px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .signup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .green-bar {
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: green;
+    left: -15px;
+  }
+  
+  .social-buttons button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .facebook-btn {
+    background: #3b5998;
+    transition: color 0.3 ease;
+  }
+  .facebook-btn:hover{
+    background: #022263;
+  }
+  .google-btn {
+    background: #dd4b39;
+    transition: color 0.3 ease;
+  }
+  .google-btn:hover{
+    background: #AB1F09;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    border: 2px solid #77d7b9;
+    box-shadow: 0 0 5px rgba(0,255,0,0.2);
+    outline: none;
+  }
+  
+  .checkbox-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-container input {
+    display: none;
+  }
+  
+  .checkbox-container .checkmark {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid green;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .checkbox-container input:checked + .checkmark::after {
+    content: "✔";
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    font-size: 14px;
+    color: green;
+    position: relative;
+  }
+  .f-icons{
+    border-right: #0A162F 1px solid ;
+
+  }
+  .facebook-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+  }
+  .google-btn{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-buttons{
+    display: flex;
+    width: 324px;
+    justify-content: space-between;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #3CB878CC;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #01813F;
+  }
+  .signup-form{
+    width: 444px;
+    height: 584px;
+  }
+  hr{
+    border-left: 1px solid #fff;
+    height: 19px;
+    opacity: 50%;
+  }
+.auth-link{
+    color: #fff;
+}
+.login-link{
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    color: #3CB878;
+    transition: color 0.3 ease;
+}
+.login-link:hover{
+    color: #01813F;
+}
+.logo{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    transition: color 0.3 ease;
+}
+.logo:hover{
+    color: #01813F;
+}
+.login-link::after {
+    content: ''; /* Створюємо порожній елемент */
+    position: absolute; /* Абсолютно позиціонуємо */
+    bottom: 0; /* Встановлюємо під текстом */
+    left: 0;
+    width: 100%; /* Ширина підкреслення */
+    height: 2px; /* Висота підкреслення */
+    background-color: #01813F; /* Колір підкреслення */
+    transform: scaleX(0); /* Початково прихований */
+    transform-origin: bottom right; /* Трансформація з правого боку */
+    transition: transform 0.3s ease; /* Анімація ефекту */
+  }
+  
+  .login-link:hover::after {
+    transform: scaleX(1); /* Підкреслення при наведенні */
+    transform-origin: bottom left; /* Трансформація з лівого боку */
+  }
+  .divider{
+    border-left: 150px solid #F2F2F2; /* Бордер зліва */
+    border-right: 150px solid #F2F2F2; /* Бордер справа */
+  }
+  .link-form{
+    text-decoration: none;
+    color: #3CB878CC;
+    transition: color 0.3 ease;
+    position: relative;
+  }
+  .link-form:hover{
+    color: #01813F;
+  }
+  .login-link::after{
+    content: ''; /* Створюємо порожній елемент */
+    position: absolute; /* Абсолютно позиціонуємо */
+    bottom: 0; /* Встановлюємо під текстом */
+    left: 0;
+    width: 100%; /* Ширина підкреслення */
+    height: 2px; /* Висота підкреслення */
+    background-color: #01813F; /* Колір підкреслення */
+    transform: scaleX(0); /* Початково прихований */
+    transform-origin: bottom right; /* Трансформація з правого боку */
+    transition: transform 0.3s ease; /* Анімація ефекту */
+  }
+  
